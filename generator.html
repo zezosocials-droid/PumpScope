@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MemeLens AI — Meme Token Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="neon-bg">
+  <div class="particle-layer"></div>
+  <header class="site-header">
+    <div class="logo">MemeLens AI</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="trending.html">Trending 🔥</a>
+      <a href="generator.html" class="active">Generator 🎨</a>
+    </nav>
+    <button id="logoutBtn" class="btn ghost">Logout</button>
+  </header>
 
+  <main class="content fade-in">
+    <section class="glass-card analyzer">
+      <div class="section-heading">
+        <h1>Meme Token Creator</h1>
+        <p>Single mode or gallery mode, pick your chaos.</p>
+      </div>
+
+      <div class="toggle-row">
+        <button id="singleMode" class="btn gradient active">Single Meme Mode</button>
+        <button id="galleryMode" class="btn ghost">Gallery Mode</button>
+      </div>
+
+      <div class="upload-row">
+        <label class="upload-label">Upload your own meme <input type="file" id="memeUpload" accept="image/*"></label>
+        <span class="helper">We’ll only keep it if it’s meme-safe.</span>
+      </div>
+
+      <div class="card-grid" id="memeGrid"></div>
+      <p id="generatorError" class="error hidden">Memes asleep, loading built-in stash.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">PumpScope — entertainment & education only. Nothing here is financial advice.</footer>
+  <script src="login.js"></script>
+  <script src="generator.js"></script>
+</body>
+</html>
