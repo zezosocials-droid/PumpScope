@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MemeLens AI — Trending Memes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="neon-bg">
+  <div class="particle-layer"></div>
+  <header class="site-header">
+    <div class="logo">MemeLens AI</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="trending.html" class="active">Trending 🔥</a>
+      <a href="generator.html">Generator 🎨</a>
+    </nav>
+    <button id="logoutBtn" class="btn ghost">Logout</button>
+  </header>
+
+  <main class="content fade-in">
+    <section class="glass-card analyzer">
+      <div class="section-heading">
+        <h1>Trending Meme Coins</h1>
+        <p>Pulling Dexscreener sauce for the wildest Solana tickers.</p>
+      </div>
+      <div id="trendingGrid" class="card-grid"></div>
+      <p id="trendError" class="error hidden">API sleepy, showing mock chaos instead.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">PumpScope — entertainment & education only. Nothing here is financial advice.</footer>
+  <script src="login.js"></script>
+  <script src="trending.js"></script>
+</body>
+</html>
 
