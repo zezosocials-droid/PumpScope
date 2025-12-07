@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MemeLens AI Access Portal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="neon-bg">
+  <div class="particle-layer"></div>
+  <main class="auth-wrapper fade-in">
+    <section class="glass-card auth-card">
+      <h1 class="title">MemeLens AI Access Portal 🔐</h1>
+      <p class="subtitle">Gatekeeping the alpha, fam. Create your pass or log in.</p>
+      <form id="authForm" class="auth-form">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="vibe handle" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="super secret drip" required>
+        <button type="submit" class="btn gradient">Login</button>
+        <button type="button" id="createBtn" class="btn ghost">Create Account</button>
+      </form>
+      <p id="authMessage" class="helper"></p>
+    </section>
+  </main>
+  <script src="login.js"></script>
+</body>
+</html>
 
